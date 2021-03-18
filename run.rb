@@ -4,20 +4,12 @@ require 'pry'
 
 
 #Test your code here
-bronx_zoo = Zoo.new("Bronx Zoo", "Bronx")
-bronx_zoo.animals = tiger, lil_cat
+atl_zoo = Zoo.new("Atlanta Zoo", "Atlanta, GA")
+bronx_zoo = Zoo.new("Bronx Zoo", "Bronx NY")
 
-atlanta_zoo = Zoo.new("Atlanta Zoo", "Atlanta")
-
-second_atl = Zoo.new("Second ATL", "Atlanta")
-
-lil_cat = Animal.new("Feline", 15, "Whiskers")
-
-tiger = Animal.new("Feline", 300, "Tony")
-
-dog = Animal.new("Canine", 50, "Sparky")
-
-
+garfield = Animal.new("garfield", "cat", "30")
+air_bud = Animal.new("Air Bud", "dog", "50")
+stewart_little  = Animal.new("Stewart", "rat", "5")
 
 binding.pry
-puts "done"
+

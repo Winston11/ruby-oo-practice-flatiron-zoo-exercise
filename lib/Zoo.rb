@@ -1,31 +1,21 @@
+require 'pry'
 class Zoo
-
-    attr_accessor :name, :location, :animals
-
-    @animals = []
-
+    attr_reader :name, :location
     @@all = []
-
-    def initialize(name, location)
+    def initialize (name, location)
         @name = name
         @location = location
+
         @@all << self
-        @animals 
     end
 
-
-    def self.all
+    def self.all 
         @@all
     end
+    # binding.pry
 
-    def self.find_by_location(location_arg)
-        my_city = []
-        @@all.map do |zoo|
-            if zoo.location == location_arg
-                my_city << zoo.location
-            end
-        end
-        my_city
+    def animals_inst()
+
     end
 
 end
